@@ -31,11 +31,11 @@ vérifier les erreurs apache
 
 #### configuration Mediawiki
 extensions installées  
-    Interwiki
-    ParserFunctions
-    WikiEditor
-    Cite
-    Scribunto
+  * Interwiki  
+  * ParserFunctions  
+  * WikiEditor  
+  * Cite  
+  * Scribunto  
 
 Localsettings  
 
