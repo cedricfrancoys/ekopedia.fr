@@ -347,3 +347,23 @@ Pour l'export, il est préférable d'avoir des liens spéciaux en anglais (Speci
 Restrictions syntaxiques (nouveau moteur moins permissif)  
 
     convertir <References /> en <references />
+
+
+### Retro compatibility
+    
+Gestion des exceptions de type erreur 404 pour la rétro-compatibilité des URL de type:
+
+    www.fr.ekopedia.org/NomDeLaPage
+    fr.ekopedia.org/NomDeLaPage
+
+.htaccess
+
+    ErrorDocument 404 /router.php
+
+router.php
+
+    <?php
+    // handle old config URLs and redirect to /wiki/
+    header('Location: /wiki'.$_SERVER['REQUEST_URI']);
+
+
