@@ -348,6 +348,11 @@ Restrictions syntaxiques (nouveau moteur moins permissif)
 
     convertir <References /> en <references />
 
+Un peu de reverse-engeneering pour deviner les namespaces additionnels (dans LocalSettings.php)
+
+    $wgExtraNamespaces[102] = "Projet";
+    $wgExtraNamespaces[103] = "Discussion du projet";
+
 
 ### Retro compatibility
     
