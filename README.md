@@ -1,12 +1,31 @@
 # ekopedia.fr
 Ekopedia recovery notes
 
+### Archive extraction
+extraction des fichiers ekopedia-20150727.tar.bz2  (1.7G)
+
+    bzip2 -dk ekopedia-20150727.tar.bz2
+    tar -xvf ekopedia.tar
+
+récupration des dumps SQL :  
+
+* ekobase.sql
+* ekopediade.sql
+* ekopediaen.sql
+* ekopediaeo.sql
+* ekopediaes.sql
+* ekopediafr.sql
+* ekopediait.sql
+* ekopediapl.sql
+* ekopediawww.sql
+* fondationeko.sql
+
 ### Server installation
 **Ubuntu 16.04.1 LTS (debian-linux-gnu 4.7.2-5)**
 
 **MySQL 5.1.73-1**
 
-**MediaWiki 1.17.0**  
+**MediaWiki 1.17.0** (version MediWiki des dumps récupérés)  
 https://phabricator.wikimedia.org/diffusion/MW/browse/REL1_17/  
 source : https://codeload.github.com/wikimedia/mediawiki/tar.gz/REL1_17  
 https://www.mediawiki.org/wiki/Manual:LocalSettings.php/fr  
